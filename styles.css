@@ -122,6 +122,13 @@ li {
 
 @media (min-width: 1025px){
 
+
+    .main-header,
+    .content {
+        width: 80%;
+        align-self: center;
+    }
+
     .col  {
         flex-basis: 0;
     }
