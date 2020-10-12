@@ -75,10 +75,12 @@ li {
 }
 
 .profile-pic {
-    height: 250px;
+    height: 200px;
+    width: 200px;
     align-self: center;
-    border-radius: 20%;
+    border-radius: 50%;
     box-shadow: 5px 5px 5px gray;
+    
 }
 
 .debug {
