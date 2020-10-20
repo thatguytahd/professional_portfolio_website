@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    background-color: blanchedalmond;
+    background-color: #daede9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -18,8 +18,10 @@ a {
 }
 
 .name a,
-li a {
-    color: burlywood;
+li a,
+.banner,
+.main-footer {
+    color: white;
 }
 
 li {
@@ -31,15 +33,39 @@ li {
 /* Container Styles */
 
 .main-header,
-.main-footer {
-    background-color: rgb(204, 44, 44);
+.main-footer,
+.banner {
+    background-color: #0ad178;
 }
 
-.main-footer {
+#socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.banner {
+    margin-top: 25px;
+    padding-top: 10px;
+}
+
+.bannerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-footer{
     margin-top: 30px;
     display: flex;
     justify-content: center;
     padding: 2em 0;
+}
+
+#bannerTitle {
+    text-align: center;
+    margin-bottom: 2px;
 }
 
 .main-header {
@@ -60,12 +86,12 @@ li {
     padding: 0;
     font-size: 1.65em;
     align-self: center;
-    
 }
 
-.content {
-	padding-right: 1.35em;
-    padding-left: 1.35em;
+.content,
+.bannerContent {
+	padding-right: 3em;
+    padding-left: 3em;
     flex: 1;
 }
 
@@ -79,8 +105,12 @@ li {
     width: 200px;
     align-self: center;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px black;
     
+}
+
+#bannerInfo {
+    text-align: center;
 }
 
 .debug {
@@ -97,6 +127,12 @@ li {
         display: flex;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .banner {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content {
@@ -138,7 +174,8 @@ li {
 
     .main-header,
     .content,
-    .main-footer {
+    .main-footer,
+    .banner {
         width: 80%;
     }
 
