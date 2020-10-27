@@ -19,7 +19,6 @@ a {
 
 .name a,
 li a,
-.banner,
 .main-footer {
     color: white;
 }
@@ -33,27 +32,8 @@ li {
 /* Container Styles */
 
 .main-header,
-.main-footer,
-.banner {
+.main-footer {
     background-color: #0ad178;
-}
-
-#socialIcons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0px;
-}
-
-.banner {
-    margin-top: 25px;
-    padding-top: 10px;
-}
-
-.bannerContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .main-footer{
@@ -61,11 +41,6 @@ li {
     display: flex;
     justify-content: center;
     padding: 2em 0;
-}
-
-#bannerTitle {
-    text-align: center;
-    margin-bottom: 2px;
 }
 
 .main-header {
@@ -88,55 +63,46 @@ li {
     align-self: center;
 }
 
-.content,
-.bannerContent {
-	padding-right: 3em;
-    padding-left: 3em;
-    flex: 1;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-pic {
-    height: 200px;
-    width: 200px;
-    align-self: center;
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px black;
-    
-}
-
-#bannerInfo {
-    text-align: center;
-}
-
 .debug {
     border: red solid 5px;
 }
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
 
 /* Media Queries */
 
 @media (min-width: 768px){
 
     .main-header,
-    .content,
     .main-footer{
         display: flex;
         width: 90%;
         margin: 0 auto;
-    }
-
-    .banner {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .content {
-        flex-wrap: wrap;
     }
 
     .main-header {
@@ -150,18 +116,6 @@ li {
         align-self: center;
     }
 
-    .col {
-        flex: 1 50%;
-    }
-
-    .primary {
-        order: -1;
-    }
-    
-    .extra {
-        order: 2;
-    }
-
 }
 
 @media (min-width: 1025px){
@@ -173,19 +127,8 @@ li {
     }
 
     .main-header,
-    .content,
-    .main-footer,
-    .banner {
+    .main-footer {
         width: 80%;
-    }
-
-    .col  {
-        flex-basis: 0;
-    }
-
-    .primary {
-        order: 1;
-        flex-grow: 1.2;
     }
 
 }
