@@ -51,6 +51,11 @@ li {
     width: 100%;
 }
 
+.content {
+    height: 100%;
+    margin-bottom: auto;
+}
+
 /* Centers the title when in mobile/smaller screen formats */
 .name {
     align-self: center;
@@ -87,7 +92,6 @@ textarea {
     padding: 12px 20px;
     margin: 20px 0;
     box-sizing: border-box;
-    border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
