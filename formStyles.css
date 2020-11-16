@@ -54,7 +54,7 @@ li {
 .content {
     height: 100%;
     margin-bottom: auto;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 /* Centers the title when in mobile/smaller screen formats */
@@ -73,11 +73,22 @@ li {
     border: red solid 5px;
 }
 
+#formInfo {
+    text-align: center;
+    padding-top: 35px;
+}
+
 .formDiv {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     margin: 0 auto;
+}
+
+.contactForm {
+    background-color: #C8C9C9;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 input[type=text] {

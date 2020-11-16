@@ -190,6 +190,8 @@ li {
     .primary {
         order: 1;
         flex-grow: 1.2;
+        padding-left: .45em;
+        padding-right: .45em;
     }
 
 }

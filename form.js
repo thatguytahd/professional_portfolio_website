@@ -10,7 +10,7 @@ function emailCheck() {
     if (validResult == false) {
         return alert('Enter valid email. Example: JohnSmith@test.com')
     } else {
-        alert('Contact Information Submitted!')
+        alert('Contact Information Submitted for ' + x + '!')
         document.getElementById('formId').reset()
     }
 }
